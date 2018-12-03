@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view class="container">
+  <view style="width:100%;height:200rpx;background-color:red;">
+    <view class="scroll-x">hahaha</view>
+  </view>
+  <view class="group">
+      <block wx:for="{{iconSize}}">
+          <icon type="success" size="{{item}}"/>
+      </block>
+    </view>
+    <view class="group">
+      <block wx:for="{{iconType}}">
+        <icon type="{{item}}" size="30"></icon>
+      </block>
+    </view>
+    <view class='group'>
+      <block wx:for="{{iconColor}}">
+        <icon type="download" size="30" color="{{item}}"></icon>
+      </block>
+    </view>
+    <view class="btn-area">
+      <view class="body-view">
+        <text>{{text}}</text>
+        <button bindtap="add">add line</button>
+        <button bindtap="remove">remove line</button>
+      </view>
+    </view>
+    <view>
+      <rich-text bindtap="tap" nodes="{{nodes}}"></rich-text>
+    </view>
+    <!--进度条  -->
+    <progress percent="50" show-info stroke-width="12" />
+    <!--button  -->
+    <block>
+      <!--设置button大小  -->
+      <button size="20">button大小</button>
+      <!-- 设置button类型 -->
+      <button type='primary'>button类型</button>
+      <!--设置button是否镂空，背景色透明  -->
+      <button plain="true">button镂空</button>
+      <!--设置button是否禁用  -->
+      <button disabled="{{disabled}}">button禁用</button>
+      <!--设置button名称前是否带 loading 图标  -->
+      <button loading='true'>button带图标</button>
+      <!--设置button的form-type属性  -->
+      <button form-type='submit'>form-type</button>
+      <button open-type='contact'>开放客服功能</button>
+    </block>
+    <!--复选框checkbox  -->
+    <checkbox-group bindchang="checkboxChange">
+      <view wx:for="{{items}}">
+        <checkbox value='{{item.name}}' checked='{{item.checkd}}'>{{item.value}}</checkbox>
+      </view>
+    </checkbox-group>
+    <!--form表单  -->
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section section_gap">
+        <view class="section__title">switch</view>
+        <switch name="switch"/>
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">slider</view>
+        <slider name="slider" show-value ></slider>
+      </view>
+      <view class="section">
+        <view class="section__title">input</view>
+        <input name="input" placeholder="please input here" />
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">radio</view>
+        <radio-group name="radio-group">
+          <label><radio value="radio1"/>radio1</label>
+          <label><radio value="radio2"/>radio2</label>
+        </radio-group>
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">checkbox</view>
+        <checkbox-group name="checkbox">
+          <label><checkbox value="checkbox1"/>checkbox1</label>
+          <label><checkbox value="checkbox2"/>checkbox2</label>
+        </checkbox-group>
+      </view>
+      <view class="btn-area">
+        <button formType="submit">Submit</button>
+        <button formType="reset">Reset</button>
+      </view>
+    </form>
+    <input value="初始化的输入框" type="text" />
+    <input type='text'  password='true' placeholder='请输入您的密码'/>
+</view>

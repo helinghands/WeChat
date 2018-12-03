@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view class='container'>
+   <view class='item'>
+        1
+    </view>
+    <view class='item item2'>
+        2
+    </view>
+    <view class='item item3'>
+        3
+    </view>
+    <view class='item'>
+        4
+    </view>
+</view>

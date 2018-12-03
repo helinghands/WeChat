@@ -1,0 +1,22 @@
+<view class="container">
+  <!-- <swiper indicator-dots="{{dots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="1000" style='width:300px;' indicator-color="rgb(255,0,0)" indicator-active-color="rgb(255,255,255)">
+    <swiper-item>
+      <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </swiper> -->
+
+
+  <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="scrolltoupper" bindscrolltolower="scrolltolower" bindscroll="scroll" upper-threshold="100" scroll-top="{{scrollTop}}" scroll-into-view="{{intoview}}">
+    <view id="green" class="scroll-view-item bc_green">1</view>
+    <view id="red"  class="scroll-view-item bc_red">2</view>
+    <view id="yellow" class="scroll-view-item bc_yellow">3</view>
+    <view id="blue" class="scroll-view-item bc_blue">4</view>
+  </scroll-view>
+  <view style='height:100px;width:200px;background-color:#ccc;margin-top:50px;' bindtap='click'></view>
+</view>

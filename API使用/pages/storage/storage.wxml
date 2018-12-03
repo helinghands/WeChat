@@ -1,0 +1,2 @@
+<button bindtap="deleteStorage">删除storage数据</button>
+<button bindtap='getStorage'>获取storage数据</button>

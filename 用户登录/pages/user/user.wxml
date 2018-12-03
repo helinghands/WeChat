@@ -1,0 +1,5 @@
+<view class='index-container'>
+  <view class='nickname'>
+    <text>{{username}}</text>
+  </view>
+</view>

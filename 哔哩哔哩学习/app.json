@@ -1,0 +1,9 @@
+{
+  "pages":[
+    "src/pages/firstPage/first",
+    "src/pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Wechat"
+  }
+}

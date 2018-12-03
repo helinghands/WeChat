@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="item1Click">
+    <text class='user-motto'>文章1</text>
+  </view>
+  <view>
+    <navigator url="../logs/logs/?id=100">文章2</navigator>
+  </view>
+  <view>
+    <button type='primary' class='user-motto' bindtap='item2Click'>文章3</button>
+  </view>
+</view>

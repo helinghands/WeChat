@@ -1,0 +1,23 @@
+.container{
+  height: 400rpx;
+  width:100%;
+  background: #ccc;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.item{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rosybrown;
+  border: 1px solid #fff;
+  flex: 0 1 50rpx;
+}
+.item3{
+  display: flex;
+  flex-basis: 200rpx;
+  align-self: center;
+}

@@ -1,0 +1,15 @@
+.container{
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  align-items:flex-start;
+}
+.item1{
+  width: 200rpx;
+  height: 200rpx;
+}
+.item1 image{
+  width: 100%;
+  height: 100%;
+}

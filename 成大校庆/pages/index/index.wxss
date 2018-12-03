@@ -1,0 +1,49 @@
+/**index.wxss**/
+.container{
+  width: 100%;
+  height: auto;
+}
+.conteiner-item1{
+  width: 100%;
+  height: 70rpx;
+  background-color: rgb(68,165,246);
+  line-height: 70rpx;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.0rem;
+}
+.container-item2{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: white;
+  font-size: 0.8rem;
+  text-indent: 25rpx;
+}
+.container-item3{
+  width: 100%;
+  height: auto;
+}
+.form-number{
+  width: 100%;
+  height: 120rpx;
+}
+.form-number-box{
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top:10rpx;
+}
+.number-box{
+  width: 20%;
+  height: 50rpx;
+  line-height: 50rpx;
+  /* background-color: rgb(68,165,246); */
+  margin-left: 4%;
+  text-align: center;
+  border-radius: 10rpx;
+  border:1rpx solid lightgrey;
+}

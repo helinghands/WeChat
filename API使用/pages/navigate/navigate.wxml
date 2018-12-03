@@ -1,0 +1,2 @@
+<button bindtap="changeNavigation">修改导航条信息</button>
+<button bindtap="showNavigationBarLoading">显示等待动画</button>

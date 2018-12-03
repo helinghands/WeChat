@@ -1,0 +1,5 @@
+<!--pages/cavans/cavans.wxml-->
+<view>
+  <canvas canvas-id="firstCanvas"></canvas>
+</view>
+<canvas canvas-id="pieCanvas"></canvas>

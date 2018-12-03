@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/cavans/cavans",
+    "pages/animation/animation",
+    "pages/navigate/navigate",
+    "pages/equipment/equipment",
+    "pages/location/location",
+    "pages/storage/storage",
+    "pages/audio/audio",
+    "pages/socket/socket",
+    "pages/loadFile/loadFile",
+    "pages/chooseImage/chooseImage",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "API使用",
+    "navigationBarTextStyle":"black"
+  }
+}

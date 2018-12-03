@@ -1,0 +1,1 @@
+<button bindtap="uploadFile">选择文件并上传</button>

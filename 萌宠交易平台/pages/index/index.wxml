@@ -1,0 +1,124 @@
+<!--index.wxml-->
+<view class="container">
+  hello view
+  <!--列表渲染  -->
+  <view wx:for="{{items}}">
+    {{item}}
+  </view>
+  <!--条件渲染  -->
+  <view wx:if="{{show}}">{{message}}</view>
+  <view wx:elif="{{!show}}" bindtap="handleTap">{{otherMessage}}</view>
+  <template name="header">
+    <view>header {{name}} {{age}}</view>
+  </template>
+  <template is="header" data="{{...message}}"/>
+  <!--{{...message}}==
+      {{
+        name:"allan",
+        age:10
+      }}
+    -->
+
+  <template name="staffName">
+    <view>
+      FirstName: {{firstName}}, LastName: {{lastName}}
+    </view>
+  </template>
+  <template is="staffName" data="{{...staffA}}"></template>
+  <template is="staffName" data="{{...staffB}}"></template>
+  <template is="staffName" data="{{...staffC}}"></template>
+  <icon type="info"></icon>
+  <checkbox checked="{{true}}"></checkbox>
+  <view>{{"hello" + name}}</view>
+  <view>{{message.name}} {{items[0]}}</view>
+  <!--组合  -->
+  <view wx:for="{{[zero,2,3,4]}}">{{item}}</view>
+  <!--对象  -->
+  <template name="info">
+    <view>
+      info:{{for}},{{bar}}
+    </view>
+  </template>
+  <template is="info" data="{{for: a, bar: b}}"></template>
+  <!--列表渲染  -->
+  <view wx:for="{{message}}">
+    {{index}}:{{item}}
+  </view>
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+      <view wx:if="{{i<=j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </view>
+    </view>
+  </view>
+  <block wx:for="{{[1,2,3]}}">
+    <view>{{index}} : {{item}}</view>
+  </block>
+  <view wx:for="array">{{item}}</view>
+  <!--条件渲染  -->
+  <view wx:if="{{5>7}}">hehehe</view>
+  <view wx:elif="{{5>6}}">hahaha</view>
+  <view wx:else>very good</view>
+
+  <block wx:if="{{false}}">
+    <view> view1 </view>
+    <view> view2 </view>
+  </block>
+  <block wx:if="{{true}}">
+    <view> view3 </view>
+    <view> view4 </view>
+  </block>
+
+  <!--模板  -->
+  <!--定义模板  -->
+  <template name="msgItem">
+    <view>
+      <text>{{index}}:{{msg}}</text>
+      <text>Time:{{time}}</text>
+    </view>
+  </template>
+  <!--使用模板  -->
+  <template is="msgItem" data="{{...item}}"></template>
+  <view bindtouchstart="changeName">{{name}}</view>
+  <view catch:tap="changeMessageName">{{message.name}}</view>
+  
+
+  <!--WXS  -->
+  <wxs module="m1">
+    var msg = "hello world";
+    module.exports.message = msg;
+  </wxs>
+  <view> {{m1.message}}</view>
+  <wxs src="./tools.wxs" module="tools"></wxs>
+  <view>{{tools.msg}}</view>
+  <view> {{tools.bar(tools.FOO)}} </view>
+  <wxs src="./../logic.wxs" module="logic" />
+  <wxs module="info">
+    var some_msg = "hello world";
+    var some_name = "allan";
+    module.exports = {
+      msg:some_msg,
+      name:some_name,
+    };
+    //运算符
+    var a = 10, b = 20;
+    console.log(30 === a + b);
+    console.log(a+b);
+    //语句
+    var exp = 10;
+    switch ( exp ) {
+    case "10":
+      console.log("string 10");
+      break;
+    case 10:
+      console.log("number 10");
+      break;
+    case exp:
+      console.log("var exp");
+      break;
+    default:
+      console.log("default");
+    };
+  </wxs>
+  <view>{{info.msg}}  {{info.name}}</view>
+</view>

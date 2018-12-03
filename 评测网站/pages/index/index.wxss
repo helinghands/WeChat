@@ -1,0 +1,102 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.selection1{
+  border-bottom: 4px solid #ddd;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  border-left: 1px solid lightGreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  padding-left: 10rpx;
+  padding-right: 20rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+.text-all{
+  color: lightgreen;
+  font-size: 10px;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content-item{
+  width: 45%;
+  height: 250rpx;
+  background-color: #ccc;
+  margin: 5px;
+  position: relative;
+}
+.content-item image{
+  width: 100%;
+  height: 100%;
+}
+.content-item-text{
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 10px;
+  background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0));
+  height: 125rpx;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+.list-item{
+  height: 500rpx;
+  width: 100%;
+}
+.list-item-img{
+  height: 300rpx;
+  width: 100%;
+  position: relative;
+}
+.list-item-img .list-img{
+  height: 100%;
+  width: 100%;
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50rpx;
+  right: 70rpx;
+}
+.list-item-text{
+  height: 200rpx;
+  width: 96%;
+  margin-top: 20rpx;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.list-item-text-title text{
+  font-weight:bold;
+  color: #111;
+}
+.list-item-text-content{
+  font-size: 10px;
+  color: #999;
+  margin-top: 20rpx;
+  line-height: 50rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+}

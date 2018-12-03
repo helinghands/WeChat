@@ -1,0 +1,12 @@
+<button type="primary" bindtap="getEquipmentInfo">获取当前设备信息</button>
+<button type="primary" bindtap="getNetworkInfo">获取当前网络信息</button>
+<button type="primary" bindtap="callPhone">拨打电话</button>
+<button type="primary" bindtap="scanCode">扫码</button>
+<button type="primary" bindtap="clipboardData">设置剪贴板信息</button>
+<button type="primary" bindtap="getclipboardData">获取剪贴板信息</button>
+<button type="primary" bindtap="openBluetooth">获取iBeacon</button>
+<button type="primary" bindtap="screenBrightness">屏幕亮度</button>
+<button type="primary" bindtap="userCaptureScreen">用户截屏</button>
+<button type="primary" bindtap="vibrateLong">振动</button>
+<button type="primary" bindtap="addPhoneContact">手机联系人</button>
+<button type="primary" bindtap="wifi">WIFI</button>
